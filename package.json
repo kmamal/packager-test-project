@@ -1,0 +1,20 @@
+{
+  "version": "0.0.0",
+  "name": "packager-test-project",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:kmamal/synth.git"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "package": "packager -I 'src/**/*.js' -I 'assets/**/*' -I 'package*.json' -o dist"
+  },
+  "dependencies": {
+    "@kmamal/sdl": "*",
+    "ffmpeg-static": "*"
+  },
+  "devDependencies": {
+    "@kmamal/packager": "*"
+  }
+}
