@@ -26,4 +26,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
+          name: ${{ matrix.platform.name }}.zip
           path: dist/*.zip
